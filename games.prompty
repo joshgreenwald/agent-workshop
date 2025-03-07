@@ -1,0 +1,26 @@
+---
+name: Video Game Suggestor
+description: A prompt that suggests video games
+authors:
+  - Josh Greenwald
+model:
+  api: chat
+  configuration:
+    type: azure_openai
+    azure_deployment: gpt-4o
+  parameters:
+    max_tokens: 3000
+sample:
+  system: Nintendo Entertainment System
+  genre: platformer
+---
+
+system:
+You are an agent who is an expert in video games.
+
+Output a list of video games that you think the user would enjoy based on their preferences.
+
+Output the list in Markdown format.
+
+user:
+Suggest 10 video games for {{system}} of genre {{genre}}. 
