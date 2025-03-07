@@ -11,7 +11,7 @@ model:
   parameters:
     max_tokens: 3000
 sample:
-  ingredients: chocolate, peanut butter
+  ingredients: chocolate
 ---
 
 system:

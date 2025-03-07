@@ -1,0 +1,22 @@
+---
+name: An empty agent
+description: An agent that we will write
+authors:
+  - Josh Greenwald
+  - Innovate New Albany
+model:
+  api: chat
+  configuration:
+    type: azure_openai
+    azure_deployment: gpt-4o-mini
+  parameters:
+    max_tokens: 3000
+sample:
+  question: What is the airspeed velocity of an unladen swallow?
+---
+
+system:
+You are an AI agent that will answer a question from the user.
+
+user:
+{{question}}
