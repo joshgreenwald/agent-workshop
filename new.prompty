@@ -6,9 +6,6 @@ authors:
   - Innovate New Albany
 model:
   api: chat
-  configuration:
-    type: azure_openai
-    azure_deployment: gpt-4o-mini
   parameters:
     max_tokens: 3000
 sample:
